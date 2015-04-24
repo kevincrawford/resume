@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik-regular-webfont.eot');
+    src: url('../fonts/graphik-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/graphik-regular-webfont.woff') format('woff'),
+         url('../fonts/graphik-regular-webfont.ttf') format('truetype'),
+         url('../fonts/graphik-regular-webfont.svg#ProximaNovaRgBoldIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik-medium-webfont.eot');
+    src: url('../fonts/graphik-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/graphik-medium-webfont.woff') format('woff'),
+         url('../fonts/graphik-medium-webfont.ttf') format('truetype'),
+         url('../fonts/graphik-medium-webfont.svg#ProximaNovaRgBoldIt') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

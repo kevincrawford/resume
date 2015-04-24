@@ -1,0 +1,33 @@
+<div class="container">
+	<div ng-include="'app/components/navbar/navbar.html'"></div>
+	<!-- Contact Form -->
+	<div class="kc-contact et-section">
+		<h3>Think Design.</h3>
+		<p>Let me know how I can assist you.</p>
+		<hr>
+		<form ng-submit="addContact()">
+		  <div class="form-group">
+		    <label for="kcContactName">Name</label>
+		    <input id="kcContactName" type="text" class="form-control" ng-model="contact.name" autofocus />
+		  </div>
+		  <div class="form-group">
+		    <label for="kcContactEmail">Email</label>
+		    <input id="kcContactEmail" type="email" class="form-control" ng-model="contact.email" />
+		  </div>
+		  <div class="form-group">
+		    <label for="kcContactMessage">Message</label>
+		    <textarea id="kcContactMessage" class="form-control" ng-model="contact.message"></textarea>
+		  </div>
+		  <div class="form-group">
+		    <button type="submit" class="btn btn-default">Send</button>
+		  </div>
+  		</form>
+	</div>
+	<div class="et-section hide">
+		<h3>Thanks.</h3>
+		<p>I will get back to you soon.</p>
+	</div>
+	<!-- End: Contact Form -->
+	<hr>
+	<div ng-include="'app/components/footer/footer.html'"></div>
+</div>
