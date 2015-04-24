@@ -21,6 +21,7 @@
   "globals": {
     "angular": false,
     "$": false,
+    "document": false,
     // Angular Mocks
     "inject": false,
     "module": false,
