@@ -22,6 +22,7 @@
     "angular": false,
     "$": false,
     "document": false,
+    "Analytics": false,
     // Angular Mocks
     "inject": false,
     "module": false,
