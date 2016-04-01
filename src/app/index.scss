@@ -40,12 +40,12 @@ header {
 		margin-bottom: -1px;
 		background-color: transparent;
 		border: none;
-		color: #868585;
+		color: #a6a5a5;
 		&:before {    
 		    font-family: 'FontAwesome';
 		    content: '\f0da';
 		    margin:0 5px 0 -10px;
-		    color: #444;
+		    color: #666;
 		}
 	}
 }
@@ -159,6 +159,12 @@ header {
 		a {
 			padding-top: 12px;
 			font-size: 12px;
+		}
+	}
+
+	ul.list-group {
+		ul.list-group {
+			margin-bottom: 0px;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('evertheme')
-  .controller('ContactCtrl', function ($scope, $firebaseArray) {
+  .controller('ContactCtrl', function ($scope, $firebaseArray, $http) {
 	var url = 'https://crackling-inferno-6027.firebaseio.com/kcContacts';
 	var ref = new Firebase(url);
 
@@ -21,9 +21,17 @@ angular.module('evertheme')
 
 		$('.et-section').toggleClass('hide');
 
+		$http({
+	    method: 'GET',
+	    url: 'http://kevin-crawford.com/sendmail.php',
+	    params: newContact
+		}).success(function (data, status, headers, config) {
+    }).error(function (data, status, header, config) {
+    });
+
 		$scope.contact.name = '';
 		$scope.contact.email = '';
 		$scope.contact.message = '';
 	};
 
-  });
+});
