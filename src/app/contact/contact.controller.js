@@ -23,7 +23,7 @@ angular.module('evertheme')
 
 		$http({
 	    method: 'GET',
-	    url: 'http://kevin-crawford.com/sendmail.php',
+	    url: '/sendmail.php',
 	    params: newContact
 		}).success(function (data, status, headers, config) {
     }).error(function (data, status, header, config) {
